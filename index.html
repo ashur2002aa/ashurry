@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATHRI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: lightslategray;
+    }
+
+    header {
+      width: 100%;
+      background-color: darkgray;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .sponsor {
+      width: 80%;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .sponsor img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .search-container {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .search-container input {
+      padding: 10px;
+      width: 70%;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .restdiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: darkgray;
+      padding: 20px;
+      border-radius: 20px;
+      width: 80%;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .image-container {
+      background-color: grey;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 20px;
+      margin: 5px 0;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .sectitles {
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .names {
+      font-size: large;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    footer.myfooter {
+      margin-top: 20px;
+      font-size: small;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>ATHRI</header>
+
+  <div class="sponsor">
+    <div class="gishru">
+      <h1 class="sectitles">SPONSORED BY:</h1>
+      <img src="images.jfif" alt="Sponsor Image" />
+      <h4>GISHRU ORGANIZATION</h4>
+    </div>
+  </div>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search for places..." onkeyup="filterImages()">
+  </div>
+
+  <div class="restdiv">
+    <h1 class="sectitles">Sweets & Refreshments</h1>
+    
+    <div class="image-container" data-name="Roben Kunafa">
+      <a href="https://www.google.com/maps/place/Roben+Kunafa/@36.8673206,42.9731874,17z/data=!3m1!4b1!4m6!3m5!1s0x40088d0051df56f3:0x39be496965d0d833!8m2!3d36.8673206!4d42.9757623!16s%2Fg%2F11ldd2w8vl?entry=ttu&g_ep=EgoyMDI0MTAyNy4wIKXMDSoASAFQAw%3D%3D">
+        <img src="download.jfif" alt="Roben Kunafa">
+        <h4 class="names">Roben Kunafa</h4>
+      </a>
+    </div>
+
+    <div class="image-container" data-name="Happy Day">
+      <a href="https://www.google.com/maps/place/Happy+day+sweets/@36.872893,42.956225,17z/data=!3m1!4b1!4m6!3m5!1s0x40088ce7f9206c6f:0xfd96dc20a632b117!8m2!3d36.872893!4d42.9587999!16s%2Fg%2F11f_d8034h?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D">
+        <img src="images (2).jfif" alt="Happy Day">
+        <h4 class="names">Happy Day</h4>
+      </a>
+    </div>
+
+    <div class="image-container" data-name="Gashtyar">
+      <a href="https://www.google.com/maps/place/Happy+day+sweets/@36.872893,42.956225,17z/data=!3m1!4b1!4m6!3m5!1s0x40088ce7f9206c6f:0xfd96dc20a632b117!8m2!3d36.872893!4d42.9587999!16s%2Fg%2F11f_d8034h?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D">
+        <img src="images.png" alt="Gashtyar">
+        <h4 class="names">Gashtyar</h4>
+      </a>
+    </div>
+  </div>
+
+  <div class="restdiv">
+    <h1 class="sectitles">Villages and Historical Sites</h1>
+
+    <div class="image-container" data-name="Barwar">
+      <a href="https://www.google.com/maps/search/barwari+bala/@37.0531875,43.1396236,11z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D">
+        <img src="DtQ3ITWWwAAywr5.jpg" alt="Barwar">
+        <h4 class="names">Barwar</h4>
+      </a>
+    </div>
+
+    <div class="image-container" data-name="Nalla">
+      <a href="https://www.google.com/maps/place/Nahla,+Nineveh+Governorate/@36.8692888,43.6964442,15z/data=!3m1!4b1!4m6!3m5!1s0x40061b32f9181f0b:0x167a4f32eaeb5aa2!8m2!3d36.8684489!4d43.7049203!16s%2Fg%2F11vryn8fy6?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D">
+        <img src="images (1).jfif" alt="Nalla">
+        <h4 class="names">Nalla</h4>
+      </a>
+    </div>
+
+    <div class="image-container" data-name="Khanis">
+      <a href="https://www.google.com/maps/place/Khinis+Assyrian+Reliefs/@36.7585501,43.4176041,15z/data=!4m6!3m5!1s0x4006275c2466bd19:0xb7b896602aa08272!8m2!3d36.7585501!4d43.4176041!16s%2Fg%2F11t37vhtv4?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D">
+        <img src="images (3).jfif" alt="Khanis">
+        <h4 class="names">Khanis</h4>
+      </a>
+    </div>
+  </div>
+
+  <footer class="myfooter">
+    <p>This web page is proudly made by <a href="#">ENWATECHX</a> for serving our Assyrian/chaldean people, made for showing and guiding our people around the world the places that are managed by the assyrian/chaldean people and also for helping the people around the world to explore more about their roots. more details: visit our page on Instagram.</p>
+  </footer>
+
+  <script>
+    function filterImages() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const images = document.querySelectorAll('.image-container');
+
+      images.forEach(image => {
+        const name = image.getAttribute('data-name').toLowerCase();
+        if (name.includes(input)) {
+          image.style.display = 'block'; // Show matching image
+        } else {
+          image.style.display = 'none'; // Hide non-matching image
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+
